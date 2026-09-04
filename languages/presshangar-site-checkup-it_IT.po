@@ -1,0 +1,816 @@
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: PressHangar Site Checkup 0.1.1\n"
+"Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/presshangar-site-checkup\n"
+"POT-Creation-Date: 2026-08-23T00:31:00+00:00\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: it\n"
+"Language: it_IT\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Domain: presshangar-site-checkup\n"
+"X-Generator: polib\n"
+
+#. Plugin Name of the plugin
+#: presshangar-site-checkup.php includes/class-phcheckup-admin.php:190
+#: includes/class-phcheckup-admin.php:191
+#: includes/class-phcheckup-admin.php:423
+msgid "PressHangar Site Checkup"
+msgstr ""
+
+#. Plugin URI of the plugin
+#: presshangar-site-checkup.php
+msgid "https://presshangar.com/presshangar-site-checkup"
+msgstr ""
+
+#. Description of the plugin
+#: presshangar-site-checkup.php
+msgid ""
+"A read-only site health checkup that explains what it finds in plain "
+"language. Detects overlapping plugins, gives approximate \"heaviness\" "
+"hints, and lists unused plugins/themes — all on demand, never automatically."
+" PressHangar Site Checkup never changes anything on your site."
+msgstr ""
+"Un controllo dello stato del sito in sola lettura che ti spiega ciò che "
+"trova con parole semplici. Individua i plugin che si sovrappongono, dà "
+"indicazioni approssimative sulla \"pesantezza\" ed elenca plugin e temi "
+"inutilizzati, tutto solo su tua richiesta, mai automaticamente. PressHangar "
+"Site Checkup non modifica mai nulla sul tuo sito."
+
+#. Author of the plugin
+#: presshangar-site-checkup.php
+msgid "Musubiemu LLC"
+msgstr ""
+
+#. Author URI of the plugin
+#: presshangar-site-checkup.php
+msgid "https://presshangar.com"
+msgstr ""
+
+#: includes/class-phcheckup-admin.php:78
+msgid "Overlapping plugins"
+msgstr "Plugin che si sovrappongono"
+
+#: includes/class-phcheckup-admin.php:79
+msgid "Output conflicts (sitemaps, duplicate tags)"
+msgstr "Conflitti di output (sitemap, tag duplicati)"
+
+#: includes/class-phcheckup-admin.php:80
+msgid "Heaviness hints"
+msgstr "Indicazioni sulla pesantezza"
+
+#: includes/class-phcheckup-admin.php:81
+msgid "Unused plugins & themes"
+msgstr "Plugin e temi inutilizzati"
+
+#: includes/class-phcheckup-admin.php:100
+msgid "Worth a look"
+msgstr "Vale la pena dare un'occhiata"
+
+#: includes/class-phcheckup-admin.php:106
+msgid "Heads up"
+msgstr "Attenzione"
+
+#: includes/class-phcheckup-admin.php:112
+msgid "All clear"
+msgstr "Tutto a posto"
+
+#: includes/class-phcheckup-admin.php:150
+msgid "No checks are turned on, so there's nothing to summarize yet."
+msgstr ""
+"Nessun controllo è attivo, quindi per ora non c'è nulla da riassumere."
+
+#: includes/class-phcheckup-admin.php:159
+msgid "Your site looks healthy overall — no notable issues found."
+msgstr ""
+"Il tuo sito sembra complessivamente in buona salute: nessun problema di "
+"rilievo trovato."
+
+#. translators: %d: number of things worth a closer look.
+#: includes/class-phcheckup-admin.php:168
+#, php-format
+msgid "We found %d thing worth a closer look."
+msgid_plural "We found %d things worth a closer look."
+msgstr[0] "Abbiamo trovato %d cosa che vale la pena esaminare più da vicino."
+msgstr[1] "Abbiamo trovato %d cose che vale la pena esaminare più da vicino."
+
+#. translators: %d: number of minor points noticed.
+#: includes/class-phcheckup-admin.php:178
+#, php-format
+msgid "Mostly healthy — %d small point to be aware of."
+msgid_plural "Mostly healthy — %d small points to be aware of."
+msgstr[0] "Perlopiù in salute: %d piccolo punto di cui essere consapevole."
+msgstr[1] "Perlopiù in salute: %d piccoli punti di cui essere consapevole."
+
+#: includes/class-phcheckup-admin.php:244
+msgid "You do not have permission to perform this action."
+msgstr "Non hai i permessi per eseguire questa azione."
+
+#: includes/class-phcheckup-admin.php:271
+msgid "Checkup complete."
+msgstr "Controllo completato."
+
+#: includes/class-phcheckup-admin.php:272
+msgid "Front-page measurement complete."
+msgstr "Misurazione della prima pagina completata."
+
+#: includes/class-phcheckup-admin.php:273
+msgid "Settings saved."
+msgstr "Impostazioni salvate."
+
+#: includes/class-phcheckup-admin.php:274
+msgid ""
+"All checks are currently turned off — enable at least one below and run the "
+"checkup again."
+msgstr ""
+"Tutti i controlli sono attualmente disattivati: attivane almeno uno qui "
+"sotto ed esegui di nuovo il controllo."
+
+#: includes/class-phcheckup-admin.php:335
+msgid "This check could not complete."
+msgstr "Non è stato possibile completare questo controllo."
+
+#: includes/class-phcheckup-admin.php:425
+msgid ""
+"A read-only health checkup for your site, explained in plain language. "
+"PressHangar Site Checkup only ever looks — it never deactivates, deletes, or"
+" changes anything on its own. Any cleanup is entirely up to you, done by "
+"hand."
+msgstr ""
+"Un controllo dello stato del tuo sito in sola lettura, spiegato con parole "
+"semplici. PressHangar Site Checkup si limita sempre a guardare: non "
+"disattiva, non elimina e non modifica mai nulla da solo. Qualsiasi pulizia "
+"spetta interamente a te, da fare a mano."
+
+#: includes/class-phcheckup-admin.php:433
+msgid "Re-run checkup"
+msgstr "Esegui di nuovo il controllo"
+
+#: includes/class-phcheckup-admin.php:433
+msgid "Run checkup"
+msgstr "Esegui il controllo"
+
+#. translators: %s: human-readable time since the last checkup, e.g. "12
+#. minutes".
+#: includes/class-phcheckup-admin.php:441
+#, php-format
+msgid "Diagnosed %s ago."
+msgstr "Diagnosticato %s fa."
+
+#: includes/class-phcheckup-admin.php:452
+msgid ""
+"No checkup has been run yet. Click the button above to get your first health"
+" report."
+msgstr ""
+"Nessun controllo è ancora stato eseguito. Fai clic sul pulsante qui sopra "
+"per ottenere il tuo primo report sullo stato del sito."
+
+#: includes/class-phcheckup-admin.php:497
+msgid ""
+"This check is currently turned off. Enable it below and run the checkup "
+"again."
+msgstr ""
+"Questo controllo è attualmente disattivato. Attivalo qui sotto ed esegui di "
+"nuovo il controllo."
+
+#: includes/class-phcheckup-admin.php:501
+msgid "Nothing further to report."
+msgstr "Nulla di ulteriore da segnalare."
+
+#: includes/class-phcheckup-admin.php:534
+msgid "Front-page load time (optional)"
+msgstr "Tempo di caricamento della prima pagina (facoltativo)"
+
+#: includes/class-phcheckup-admin.php:536
+msgid ""
+"A single, one-time request to your own front page, timed start to finish. "
+"This is a rough total, not a per-plugin breakdown, and it only ever runs "
+"when you click the button below — never automatically and never as part of "
+"\"Run checkup\"."
+msgstr ""
+"Una singola richiesta, una tantum, alla tua stessa prima pagina, "
+"cronometrata dall'inizio alla fine. È un totale approssimativo, non un "
+"dettaglio plugin per plugin, e viene eseguita solo quando fai clic sul "
+"pulsante qui sotto: mai automaticamente e mai come parte di \"Esegui il "
+"controllo\"."
+
+#: includes/class-phcheckup-admin.php:541
+msgid "Measure front-page load time"
+msgstr "Misura il tempo di caricamento della prima pagina"
+
+#. translators: %s: human-readable time since this measurement was taken, e.g.
+#. "5 minutes".
+#: includes/class-phcheckup-admin.php:548
+#, php-format
+msgid "Last measured %s ago:"
+msgstr "Ultima misurazione %s fa:"
+
+#: includes/class-phcheckup-admin.php:568
+msgid "Checks"
+msgstr "Controlli"
+
+#: includes/class-phcheckup-admin.php:580
+msgid "Save"
+msgstr "Salva"
+
+#: includes/class-phcheckup-conflicts.php:61
+msgid ""
+"No output conflicts detected. Nothing looks like it is being written twice."
+msgstr ""
+"Nessun conflitto di output rilevato. Non sembra che nulla venga scritto due "
+"volte."
+
+#. translators: %d: number of conflict findings.
+#: includes/class-phcheckup-conflicts.php:78
+#, php-format
+msgid "%d possible output conflict found."
+msgid_plural "%d possible output conflicts found."
+msgstr[0] "%d possibile conflitto di output trovato."
+msgstr[1] "%d possibili conflitti di output trovati."
+
+#: includes/class-phcheckup-conflicts.php:132
+msgid "Search engines are being discouraged while an SEO plugin is active."
+msgstr ""
+"I motori di ricerca vengono scoraggiati mentre è attivo un plugin SEO."
+
+#: includes/class-phcheckup-conflicts.php:133
+msgid ""
+"Settings > Reading has \"Discourage search engines from indexing this site\""
+" turned on, which asks Google and others not to index the site at all. "
+"Running an SEO plugin at the same time is working against itself — the SEO "
+"effort cannot take effect while indexing is discouraged."
+msgstr ""
+"In Impostazioni > Lettura è attiva l'opzione \"Scoraggia i motori di ricerca"
+" dall'indicizzare questo sito\", che chiede a Google e agli altri di non "
+"indicizzare affatto il sito. Eseguire un plugin SEO nello stesso momento è "
+"controproducente: il lavoro SEO non può avere effetto finché "
+"l'indicizzazione è scoraggiata."
+
+#: includes/class-phcheckup-conflicts.php:134
+msgid ""
+"If the site is meant to be found in search, turn that setting off under "
+"Settings > Reading. If the site is intentionally private/under construction,"
+" you can ignore this — but then the SEO plugin is not doing anything useful "
+"yet."
+msgstr ""
+"Se il sito deve essere trovato nelle ricerche, disattiva quell'opzione in "
+"Impostazioni > Lettura. Se il sito è intenzionalmente privato o in "
+"costruzione, puoi ignorare questo avviso, ma allora il plugin SEO non sta "
+"ancora facendo nulla di utile."
+
+#. translators: %s: comma-separated plugin names.
+#: includes/class-phcheckup-conflicts.php:202
+#, php-format
+msgid ""
+"WordPress is serving its own sitemap at /wp-sitemap.xml, and another sitemap"
+" plugin is also active: %s."
+msgstr ""
+"WordPress pubblica la propria sitemap su /wp-sitemap.xml ed è attivo anche "
+"un altro plugin per la sitemap: %s."
+
+#: includes/class-phcheckup-conflicts.php:203
+#: includes/class-phcheckup-conflicts.php:271
+#: includes/class-phcheckup-duplicates.php:463
+msgid ", "
+msgstr ", "
+
+#: includes/class-phcheckup-conflicts.php:205
+msgid ""
+"When two sitemaps are published, search engines can be handed two different "
+"lists of your pages. Usually you want exactly one — most SEO plugins expect "
+"to replace the built-in sitemap, not run alongside it."
+msgstr ""
+"Quando vengono pubblicate due sitemap, ai motori di ricerca possono essere "
+"consegnati due elenchi diversi delle tue pagine. Di solito ne vuoi "
+"esattamente una: la maggior parte dei plugin SEO si aspetta di sostituire la"
+" sitemap integrata, non di affiancarla."
+
+#: includes/class-phcheckup-conflicts.php:206
+msgid ""
+"Pick one sitemap: either turn off your SEO plugin's sitemap (and keep the "
+"built-in one), or have the SEO plugin disable the core sitemap. PressHangar "
+"Site Checkup does not change this for you."
+msgstr ""
+"Scegli una sola sitemap: disattiva la sitemap del tuo plugin SEO (e tieni "
+"quella integrata) oppure fai in modo che il plugin SEO disabiliti la sitemap"
+" del core. PressHangar Site Checkup non lo modifica al posto tuo."
+
+#: includes/class-phcheckup-conflicts.php:243
+msgid "canonical links"
+msgstr "link canonici"
+
+#: includes/class-phcheckup-conflicts.php:244
+msgid "Open Graph titles (og:title)"
+msgstr "titoli Open Graph (og:title)"
+
+#: includes/class-phcheckup-conflicts.php:245
+msgid "meta descriptions"
+msgstr "meta description"
+
+#. translators: 1: count, 2: tag label e.g. "canonical links".
+#: includes/class-phcheckup-conflicts.php:255
+#, php-format
+msgid "%1$d %2$s"
+msgstr "%1$d %2$s"
+
+#. translators: %s: list like "2 canonical links, 2 og:title tags".
+#: includes/class-phcheckup-conflicts.php:270
+#, php-format
+msgid "Your front page outputs duplicated head tags: %s."
+msgstr "La tua prima pagina restituisce tag head duplicati: %s."
+
+#: includes/class-phcheckup-conflicts.php:273
+msgid ""
+"A page should have exactly one canonical link, one og:title, and one meta "
+"description. Two of any of these almost always means two plugins are both "
+"writing them — for example two SEO plugins. Search engines and social "
+"networks may then pick the wrong one."
+msgstr ""
+"Una pagina dovrebbe avere esattamente un link canonico, un og:title e una "
+"meta description. Due di uno qualsiasi di questi elementi significa quasi "
+"sempre che due plugin li stanno scrivendo entrambi, ad esempio due plugin "
+"SEO. I motori di ricerca e i social network potrebbero quindi scegliere "
+"quello sbagliato."
+
+#: includes/class-phcheckup-conflicts.php:274
+msgid ""
+"This is the on-page symptom of overlapping SEO plugins (see the Overlapping "
+"plugins check). Keep one SEO plugin active and the duplicates should "
+"disappear. PressHangar Site Checkup only looks — it never edits your pages."
+msgstr ""
+"Questo è il sintomo, visibile sulla pagina, di plugin SEO che si "
+"sovrappongono (vedi il controllo Plugin che si sovrappongono). Tieni attivo "
+"un solo plugin SEO e i duplicati dovrebbero sparire. PressHangar Site "
+"Checkup si limita a guardare: non modifica mai le tue pagine."
+
+#: includes/class-phcheckup-duplicates.php:212
+msgid "SEO"
+msgstr "SEO"
+
+#: includes/class-phcheckup-duplicates.php:213
+msgid "Caching"
+msgstr "Caching"
+
+#: includes/class-phcheckup-duplicates.php:214
+msgid "Security"
+msgstr "Sicurezza"
+
+#: includes/class-phcheckup-duplicates.php:215
+msgid "Backup"
+msgstr "Backup"
+
+#: includes/class-phcheckup-duplicates.php:216
+msgid "Forms"
+msgstr "Moduli"
+
+#: includes/class-phcheckup-duplicates.php:217
+msgid "Image optimization"
+msgstr "Ottimizzazione delle immagini"
+
+#: includes/class-phcheckup-duplicates.php:218
+msgid "Sitemap"
+msgstr "Sitemap"
+
+#: includes/class-phcheckup-duplicates.php:219
+msgid "Related posts"
+msgstr "Articoli correlati"
+
+#: includes/class-phcheckup-duplicates.php:220
+msgid "Link management"
+msgstr "Gestione dei link"
+
+#: includes/class-phcheckup-duplicates.php:221
+msgid "RSS import/aggregation"
+msgstr "Importazione/aggregazione RSS"
+
+#: includes/class-phcheckup-duplicates.php:222
+msgid "Code snippets"
+msgstr "Snippet di codice"
+
+#: includes/class-phcheckup-duplicates.php:223
+msgid "Image galleries"
+msgstr "Gallerie di immagini"
+
+#: includes/class-phcheckup-duplicates.php:224
+msgid "Sliders/carousels"
+msgstr "Slider/caroselli"
+
+#: includes/class-phcheckup-duplicates.php:225
+msgid "Breadcrumbs"
+msgstr "Breadcrumb"
+
+#: includes/class-phcheckup-duplicates.php:226
+msgid "Table of contents"
+msgstr "Indice dei contenuti"
+
+#: includes/class-phcheckup-duplicates.php:227
+msgid "Redirects"
+msgstr "Reindirizzamenti"
+
+#: includes/class-phcheckup-duplicates.php:228
+msgid "Affiliate link management"
+msgstr "Gestione dei link di affiliazione"
+
+#: includes/class-phcheckup-duplicates.php:229
+msgid "Broken-link checking"
+msgstr "Controllo dei link interrotti"
+
+#: includes/class-phcheckup-duplicates.php:230
+msgid "Scheduled publishing"
+msgstr "Pubblicazione programmata"
+
+#: includes/class-phcheckup-duplicates.php:231
+msgid "Migration / site config"
+msgstr "Migrazione / configurazione del sito"
+
+#: includes/class-phcheckup-duplicates.php:232
+msgid "Index requests (IndexNow)"
+msgstr "Richieste di indicizzazione (IndexNow)"
+
+#: includes/class-phcheckup-duplicates.php:233
+msgid "Analytics"
+msgstr "Analytics"
+
+#: includes/class-phcheckup-duplicates.php:234
+msgid "Cookie / consent banners"
+msgstr "Banner per cookie / consenso"
+
+#. translators: 1: number of plugins, 2: category label (e.g. "SEO"), 3:
+#. comma-separated plugin names.
+#: includes/class-phcheckup-duplicates.php:460
+#, php-format
+msgid "%1$d active plugins are doing %2$s: %3$s."
+msgstr "%1$d plugin attivi svolgono %2$s: %3$s."
+
+#: includes/class-phcheckup-duplicates.php:467
+msgid ""
+"One of these is part of our own PressHangar suite, and it looks like it "
+"overlaps with a third-party plugin doing the same job. Running both usually "
+"means duplicated work in the background, and sometimes conflicting output "
+"(e.g. two sets of meta tags or two sitemaps)."
+msgstr ""
+"Uno di questi fa parte della nostra suite PressHangar e sembra che si "
+"sovrapponga a un plugin di terze parti che svolge lo stesso compito. Tenerli"
+" attivi entrambi di solito significa lavoro duplicato in background e a "
+"volte output in conflitto (ad esempio due serie di meta tag o due sitemap)."
+
+#: includes/class-phcheckup-duplicates.php:469
+msgid ""
+"Running more than one plugin for the same job usually means duplicated work "
+"happening on every page load, and can sometimes cause the two plugins to "
+"actively conflict (for example, both trying to write the same meta tags or "
+"the same sitemap)."
+msgstr ""
+"Eseguire più di un plugin per lo stesso compito di solito significa lavoro "
+"duplicato a ogni caricamento della pagina e a volte può far sì che i due "
+"plugin entrino attivamente in conflitto (per esempio, entrambi che cercano "
+"di scrivere gli stessi meta tag o la stessa sitemap)."
+
+#: includes/class-phcheckup-duplicates.php:472
+msgid ""
+"Keep the one you rely on most and consider deactivating the other(s) — "
+"PressHangar Site Checkup never does this for you, so please do it by hand "
+"from the Plugins screen when you're ready."
+msgstr ""
+"Tieni quello su cui fai più affidamento e valuta di disattivare gli altri: "
+"PressHangar Site Checkup non lo fa mai al posto tuo, quindi fallo a mano "
+"dalla schermata Plugin quando sei pronto."
+
+#: includes/class-phcheckup-duplicates.php:475
+msgid ""
+"(This category was guessed from the plugin's name/description rather than a "
+"known signature, so double-check before acting on it.)"
+msgstr ""
+"(Questa categoria è stata dedotta dal nome/descrizione del plugin anziché da"
+" una firma nota, quindi ricontrolla prima di agire.)"
+
+#: includes/class-phcheckup-duplicates.php:487
+msgid ""
+"No overlapping plugins found. Each active plugin appears to be doing a "
+"distinct job."
+msgstr ""
+"Nessun plugin che si sovrappone trovato. Ogni plugin attivo sembra svolgere "
+"un compito distinto."
+
+#. translators: %d: number of overlap findings.
+#: includes/class-phcheckup-duplicates.php:492
+#, php-format
+msgid "%d possible overlap found among your active plugins."
+msgid_plural "%d possible overlaps found among your active plugins."
+msgstr[0] "%d possibile sovrapposizione trovata tra i tuoi plugin attivi."
+msgstr[1] "%d possibili sovrapposizioni trovate tra i tuoi plugin attivi."
+
+#. translators: 1: number of inactive plugins, 2: comma-separated plugin
+#. names.
+#: includes/class-phcheckup-inventory.php:126
+#, php-format
+msgid "%1$d installed plugin is not active: %2$s."
+msgid_plural "%1$d installed plugins are not active: %2$s."
+msgstr[0] "%1$d plugin installato non è attivo: %2$s."
+msgstr[1] "%1$d plugin installati non sono attivi: %2$s."
+
+#: includes/class-phcheckup-inventory.php:131
+msgid ""
+"Inactive plugins still take up disk space, still show up as something to "
+"keep patched, and can quietly become a security weak point if they're never "
+"updated again."
+msgstr ""
+"I plugin inattivi occupano comunque spazio su disco, restano qualcosa da "
+"tenere aggiornato e possono diventare silenziosamente un punto debole per la"
+" sicurezza se non vengono più aggiornati."
+
+#. translators: %d: number of inactive plugins whose files haven't changed in
+#. 2+ years.
+#: includes/class-phcheckup-inventory.php:136
+#, php-format
+msgid ""
+"%d of them hasn't been touched in a long time (2+ years since its files last"
+" changed)."
+msgid_plural ""
+"%d of them haven't been touched in a long time (2+ years since their files "
+"last changed)."
+msgstr[0] ""
+"%d di essi non viene toccato da molto tempo (oltre 2 anni dall'ultima "
+"modifica dei file)."
+msgstr[1] ""
+"%d di essi non vengono toccati da molto tempo (oltre 2 anni dall'ultima "
+"modifica dei file)."
+
+#: includes/class-phcheckup-inventory.php:145
+msgid ""
+"If you're confident you won't reactivate one of these, consider deleting it "
+"from the Plugins screen. PressHangar Site Checkup only points these out — it"
+" never deletes anything itself."
+msgstr ""
+"Se sei sicuro che non riattiverai uno di questi, valuta di eliminarlo dalla "
+"schermata Plugin. PressHangar Site Checkup si limita a segnalarli: non "
+"elimina mai nulla da solo."
+
+#. translators: 1: number of unused themes, 2: comma-separated theme names.
+#: includes/class-phcheckup-inventory.php:167
+#, php-format
+msgid "%1$d installed theme is not in use: %2$s."
+msgid_plural "%1$d installed themes are not in use: %2$s."
+msgstr[0] "%1$d tema installato non è in uso: %2$s."
+msgstr[1] "%1$d temi installati non sono in uso: %2$s."
+
+#: includes/class-phcheckup-inventory.php:175
+msgid ""
+"Like plugins, unused themes still take up disk space and can still be a "
+"security weak point if they're never updated again."
+msgstr ""
+"Come i plugin, i temi inutilizzati occupano comunque spazio su disco e "
+"possono restare un punto debole per la sicurezza se non vengono più "
+"aggiornati."
+
+#: includes/class-phcheckup-inventory.php:176
+msgid ""
+"It's worth keeping one official WordPress default theme (e.g. Twenty Twenty-"
+"Four) installed as a safe fallback in case you ever need to quickly switch "
+"away from your main theme — but the rest can usually be deleted from the "
+"Themes screen. PressHangar Site Checkup only points these out — it never "
+"deletes anything itself."
+msgstr ""
+"Vale la pena tenere installato un tema predefinito ufficiale di WordPress "
+"(ad esempio Twenty Twenty-Four) come ripiego sicuro, nel caso ti serva "
+"passare rapidamente da un altro tema principale, ma il resto di solito può "
+"essere eliminato dalla schermata Temi. PressHangar Site Checkup si limita a "
+"segnalarli: non elimina mai nulla da solo."
+
+#: includes/class-phcheckup-inventory.php:257
+msgid ""
+"Nothing unused found — every installed plugin is active and every installed "
+"theme is in use."
+msgstr ""
+"Nulla di inutilizzato trovato: ogni plugin installato è attivo e ogni tema "
+"installato è in uso."
+
+#: includes/class-phcheckup-inventory.php:272
+msgid ""
+"Some installed items aren't currently in use. None of this is urgent, but "
+"it's worth a periodic tidy-up."
+msgstr ""
+"Alcuni elementi installati non sono attualmente in uso. Niente di urgente, "
+"ma vale la pena fare una sistemata di tanto in tanto."
+
+#: includes/class-phcheckup-weight.php:52
+msgid ""
+"A plugin count like this is unlikely to be a performance problem by itself."
+msgstr ""
+"Un numero di plugin come questo difficilmente è di per sé un problema di "
+"prestazioni."
+
+#: includes/class-phcheckup-weight.php:59
+msgid ""
+"This is on the higher side. It's not necessarily a problem — well-built "
+"plugins that only do their work when needed add little overhead — but it's "
+"worth a periodic look at whether everything here still earns its keep."
+msgstr ""
+"Questo numero è piuttosto alto. Non è necessariamente un problema (plugin "
+"ben realizzati che lavorano solo quando serve aggiungono poco carico), ma "
+"vale la pena controllare di tanto in tanto se tutto qui ha ancora la sua "
+"utilità."
+
+#: includes/class-phcheckup-weight.php:65
+msgid ""
+"This is a lot of active plugins. Each one adds at least a little overhead to"
+" every admin (and often front-end) page load; a plugin count this high is "
+"worth reviewing for anything you've stopped actively using."
+msgstr ""
+"Questo è un numero elevato di plugin attivi. Ognuno aggiunge almeno un po' "
+"di carico al caricamento di ogni pagina di amministrazione (e spesso anche "
+"del front-end); un numero di plugin così alto merita una revisione per tutto"
+" ciò che hai smesso di usare attivamente."
+
+#: includes/class-phcheckup-weight.php:139
+msgid ""
+"Could not read any autoloaded options (or there are none) — nothing to "
+"report here."
+msgstr ""
+"Non è stato possibile leggere alcuna opzione con autoload (o non ce ne "
+"sono): nulla da segnalare qui."
+
+#. translators: 1: total autoload size (e.g. "1.2 MB"), 2: comma-separated
+#. list of the largest option names.
+#: includes/class-phcheckup-weight.php:170
+#, php-format
+msgid ""
+"WordPress loads about %1$s of \"autoload\" option data on every single page "
+"view. The largest contributors are: %2$s."
+msgstr ""
+"WordPress carica circa %1$s di dati di opzioni \"autoload\" a ogni singola "
+"visualizzazione di pagina. I contributi maggiori sono: %2$s."
+
+#: includes/class-phcheckup-weight.php:273
+msgid "Could not measure any plugin folder sizes."
+msgstr ""
+"Non è stato possibile misurare le dimensioni di alcuna cartella dei plugin."
+
+#. translators: %s: comma-separated "Plugin Name (size)" entries, largest
+#. first.
+#: includes/class-phcheckup-weight.php:298
+#, php-format
+msgid ""
+"Largest active plugins by disk space (approximate — this is not a speed "
+"measurement, just a size ranking): %s."
+msgstr ""
+"Plugin attivi più grandi per spazio su disco (approssimativo: non è una "
+"misura di velocità, solo una classifica per dimensione): %s."
+
+#: includes/class-phcheckup-weight.php:418
+msgid "Could not measure — the WordPress HTTP API is unavailable."
+msgstr ""
+"Non è stato possibile misurare: l'API HTTP di WordPress non è disponibile."
+
+#: includes/class-phcheckup-weight.php:436
+msgid ""
+"Could not measure the front page — the request failed. Your site's own "
+"hosting/network may be blocking outbound requests to itself."
+msgstr ""
+"Non è stato possibile misurare la prima pagina: la richiesta non è andata a "
+"buon fine. L'hosting o la rete del tuo sito potrebbero bloccare le richieste"
+" in uscita verso se stesso."
+
+#. translators: %d: HTTP status code returned by the front page.
+#: includes/class-phcheckup-weight.php:447
+#, php-format
+msgid ""
+"The front page responded with an unexpected status (%d), so this measurement"
+" may not be reliable."
+msgstr ""
+"La prima pagina ha risposto con uno stato inatteso (%d), quindi questa "
+"misurazione potrebbe non essere affidabile."
+
+#. translators: %d: total load time in milliseconds.
+#: includes/class-phcheckup-weight.php:455
+#, php-format
+msgid ""
+"Your front page took about %d ms to fully respond, start to finish, for this"
+" one request."
+msgstr ""
+"La tua prima pagina ha impiegato circa %d ms per rispondere completamente, "
+"dall'inizio alla fine, per questa singola richiesta."
+
+#. translators: %d: number of active plugins.
+#: includes/class-phcheckup-weight.php:475
+#, php-format
+msgid "%d plugin is currently active."
+msgid_plural "%d plugins are currently active."
+msgstr[0] "%d plugin è attualmente attivo."
+msgstr[1] "%d plugin sono attualmente attivi."
+
+#: includes/class-phcheckup-weight.php:479
+msgid ""
+"This is an approximate hint, not a precise measurement — a smaller, well-"
+"built set of plugins is generally easier to keep fast than a large one, but "
+"plugin quality matters more than plugin count."
+msgstr ""
+"Questa è un'indicazione approssimativa, non una misura precisa: un insieme "
+"di plugin più piccolo e ben realizzato è generalmente più facile da "
+"mantenere veloce rispetto a uno grande, ma la qualità dei plugin conta più "
+"del loro numero."
+
+#: includes/class-phcheckup-weight.php:485
+msgid "Autoloaded option data (loaded on every page view)"
+msgstr ""
+"Dati delle opzioni con autoload (caricati a ogni visualizzazione di pagina)"
+
+#: includes/class-phcheckup-weight.php:487
+msgid ""
+"This is an approximate hint. If one plugin's data dominates this list, it "
+"may be worth checking that plugin's own settings for anything you can safely"
+" trim (PressHangar Site Checkup never edits this data itself)."
+msgstr ""
+"Questa è un'indicazione approssimativa. Se i dati di un plugin dominano "
+"questo elenco, potrebbe valere la pena controllare le impostazioni di quel "
+"plugin per vedere se c'è qualcosa che puoi ridurre in sicurezza (PressHangar"
+" Site Checkup non modifica mai questi dati da solo)."
+
+#: includes/class-phcheckup-weight.php:493
+msgid "Disk space used by active plugins"
+msgstr "Spazio su disco usato dai plugin attivi"
+
+#: includes/class-phcheckup-weight.php:494
+msgid ""
+"(One or more folders were too large to fully measure within the time "
+"PressHangar Site Checkup allows itself, so these numbers may be a partial "
+"undercount.)"
+msgstr ""
+"(Una o più cartelle erano troppo grandi per essere misurate completamente "
+"nel tempo che PressHangar Site Checkup si concede, quindi questi numeri "
+"potrebbero essere in parte sottostimati.)"
+
+#: includes/class-phcheckup-weight.php:495
+msgid ""
+"This is an approximate hint about size, not speed — a large plugin isn't "
+"automatically a slow one. For precise timing, a developer-focused tool (e.g."
+" Query Monitor) is a better fit."
+msgstr ""
+"Questa è un'indicazione approssimativa sulla dimensione, non sulla velocità:"
+" un plugin grande non è automaticamente lento. Per una misurazione precisa "
+"dei tempi, uno strumento pensato per gli sviluppatori (ad esempio Query "
+"Monitor) è più adatto."
+
+#: includes/class-phcheckup-weight.php:499
+msgid ""
+"Heaviness hints are approximate signals, not precise timings — use them as a"
+" starting point, not a verdict."
+msgstr ""
+"Le indicazioni sulla pesantezza sono segnali approssimativi, non tempi "
+"precisi: usale come punto di partenza, non come un verdetto."
+
+#: includes/class-phcheckup-admin.php:0
+msgid "Getting started"
+msgstr "Per iniziare"
+
+#: includes/class-phcheckup-admin.php:0
+msgid ""
+"PressHangar Site Checkup reads your site and reports what it finds in plain "
+"language — it never changes anything. New here? These few steps get you "
+"going."
+msgstr ""
+"PressHangar Site Checkup legge il tuo sito e riporta ciò che trova con "
+"parole semplici: non modifica mai nulla. Sei nuovo? Questi pochi passaggi ti"
+" aiutano a iniziare."
+
+#: includes/class-phcheckup-admin.php:0
+msgid "Run your first checkup"
+msgstr "Esegui il tuo primo controllo"
+
+#: includes/class-phcheckup-admin.php:0
+msgid ""
+"Press \"Run checkup\" above. It only looks at your site — it never "
+"deactivates, deletes, or edits anything."
+msgstr ""
+"Premi \"Esegui il controllo\" qui sopra. Si limita a guardare il tuo sito: "
+"non disattiva, non elimina e non modifica nulla."
+
+#: includes/class-phcheckup-admin.php:0
+msgid "Review the findings in plain language"
+msgstr "Esamina i risultati spiegati con parole semplici"
+
+#: includes/class-phcheckup-admin.php:0
+msgid ""
+"Each result explains what it is and why it matters. Any cleanup is entirely "
+"your call, done by hand."
+msgstr ""
+"Ogni risultato spiega di cosa si tratta e perché è importante. Qualsiasi "
+"pulizia spetta interamente a te, da fare a mano."
+
+#: includes/class-phcheckup-admin.php:0
+msgid "Measure your front page (optional)"
+msgstr "Misura la tua prima pagina (facoltativo)"
+
+#: includes/class-phcheckup-admin.php:0
+msgid ""
+"Use the card below to get an approximate load-time reading for your home "
+"page. The plugin makes an outbound request only here, and only when you "
+"click it."
+msgstr ""
+"Usa la scheda qui sotto per ottenere una lettura approssimativa del tempo di"
+" caricamento della tua home page. Il plugin effettua una richiesta in uscita"
+" solo qui, e solo quando fai clic."
