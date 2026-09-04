@@ -1,1 +1,17 @@
-
+   name: Deploy to WordPress.org
+   on:
+     push:
+       tags:
+         - "*"
+   jobs:
+     release:
+       name: Deploy new version
+       runs-on: ubuntu-latest
+       steps:
+         - uses: actions/checkout@v4
+         - uses: 10up/action-wordpress-plugin-deploy@stable
+           env:
+             SVN_USERNAME: ${{ secrets.SVN_USERNAME }}
+             SVN_PASSWORD: ${{ secrets.SVN_PASSWORD }}
+             SLUG: presshangar-site-checkup
+             ASSETS_DIR: wporg-assets
