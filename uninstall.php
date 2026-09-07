@@ -1,6 +1,6 @@
 <?php
 /**
- * Uninstall routine: removes PressHangar Site Checkup's own two options and nothing
+ * Uninstall routine: removes PressHangar Site Checkup's own options and nothing
  * else. PressHangar Site Checkup never wrote anything belonging to any other plugin,
  * theme, post, or option, so there is nothing else to clean up.
  *
@@ -19,3 +19,4 @@ if ( ! defined( 'WP_UNINSTALL_PLUGIN' ) ) {
 
 delete_option( 'phcheckup_settings' );
 delete_option( 'phcheckup_last_scan' );
+delete_option( 'phcheckup_review_dismissed' );

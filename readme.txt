@@ -1,18 +1,18 @@
 === PressHangar Site Checkup ===
 Contributors: presshangar
-Tags: health check, site health, performance, plugins, duplicate plugins
+Tags: site health, plugin conflict, health check, plugin checker, unused plugins
 Requires at least: 6.0
 Tested up to: 7.1
 Requires PHP: 7.4
-Stable tag: 0.3.1
+Stable tag: 0.3.2
 License: GPLv2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
 
-A read-only site checkup that explains findings in plain language: spots overlapping plugins, hints at plugin heaviness, lists unused ones.
+Free, read-only WordPress health check: find overlapping or duplicate plugins, bloat, and unused plugins & themes — in plain language.
 
 == Description ==
 
-PressHangar Site Checkup is a **site doctor**, not a mechanic: it looks, it explains, and it advises — it never touches anything. There is nothing in this plugin that deactivates, deletes, or edits any plugin, theme, post, or option other than PressHangar Site Checkup's own two settings. Every diagnostic runs only when you click a button; nothing runs automatically, and there is no background profiler slowing down your site.
+PressHangar Site Checkup is a free, read-only WordPress health check and plugin conflict checker. It finds overlapping or duplicate plugins (two plugins doing the same job), heaviness and bloat hints, and unused plugins and themes — all in plain language. It is a **site doctor**, not a mechanic: it looks, it explains, and it advises — it never touches anything. There is nothing in this plugin that deactivates, deletes, or edits any plugin, theme, post, or option other than PressHangar Site Checkup's own settings. Every diagnostic runs only when you click a button; nothing runs automatically, and there is no background profiler slowing down your site.
 
 **Click "Run checkup" and PressHangar Site Checkup runs three read-only checks:**
 
@@ -56,6 +56,9 @@ Yes. Each of the three checks (overlapping plugins, heaviness hints, unused item
 This plugin does not use, connect to, or send any data to any third-party service. The optional front-page timing check makes a single HTTP request to your own site's home URL (the same site the plugin runs on, via `home_url( '/' )`) to measure how long your front page takes to respond. No data leaves your server and no external or third-party endpoint is ever contacted.
 
 == Changelog ==
+
+= 0.3.2 =
+* Added a gentle, dismissible review request that appears only after you've run a checkup (no incentives). readme search-keyword optimization. No functional or data changes to the checks.
 
 = 0.3.1 =
 * Review fixes: register the admin page directly under Tools (removed the shared suite-menu helper and its generic function/menu names); bind the autoload row-limit query with $wpdb->prepare(); normalize plugin-directory paths with wp_normalize_path(); use the core Sitemaps API for the sitemap index URL.

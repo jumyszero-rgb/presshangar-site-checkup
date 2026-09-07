@@ -10,8 +10,9 @@
  * pattern.
  *
  * This class is the only place in PressHangar Site Checkup that ever calls
- * `update_option()`, and it only ever writes the two options this plugin
- * owns: `PHCHECKUP_OPTION_SETTINGS` and `PHCHECKUP_OPTION_LAST_SCAN`.
+ * `update_option()`, and it only ever writes the options this plugin owns:
+ * `PHCHECKUP_OPTION_SETTINGS`, `PHCHECKUP_OPTION_LAST_SCAN`, and the
+ * `phcheckup_review_dismissed` flag for the one-time review request.
  *
  * @package PressHangar Site Checkup
  */
@@ -31,6 +32,9 @@ class PHCHECKUP_Admin {
 	const NONCE_RUN_CHECKUP      = 'phcheckup_run_checkup';
 	const NONCE_MEASURE_FRONT    = 'phcheckup_measure_frontpage';
 	const NONCE_SAVE_SETTINGS    = 'phcheckup_save_settings';
+
+	/** Option flag: the user dismissed the review request. */
+	const OPTION_REVIEW_DISMISSED = 'phcheckup_review_dismissed';
 
 	/** Module slugs, in the order they're run and displayed. */
 	const MODULES = array( 'duplicates', 'conflicts', 'weight', 'inventory' );
@@ -458,12 +462,53 @@ class PHCHECKUP_Admin {
 	}
 
 	/**
+	 * Handle the "No thanks" dismissal of the review request. Nonce- and
+	 * capability-checked; sets a single option so the ask never shows again.
+	 */
+	private static function maybe_dismiss_review() {
+		if ( ! isset( $_GET['phcheckup_review_off'] ) || ! current_user_can( 'manage_options' ) ) {
+			return;
+		}
+		if ( ! isset( $_GET['_wpnonce'] ) || ! wp_verify_nonce( sanitize_key( wp_unslash( $_GET['_wpnonce'] ) ), 'phcheckup_review_off' ) ) {
+			return;
+		}
+		update_option( self::OPTION_REVIEW_DISMISSED, 1 );
+	}
+
+	/**
+	 * A gentle, success-gated, dismissible request for a WordPress.org review.
+	 * Shows only after the user has had a win (a checkup has run) and only
+	 * until dismissed. No incentives are offered (per the .org guidelines).
+	 *
+	 * @param bool $earned Whether the user has already got value from the plugin.
+	 */
+	private static function render_review_ask( $earned ) {
+		if ( ! $earned || get_option( self::OPTION_REVIEW_DISMISSED ) ) {
+			return;
+		}
+		$review_url  = 'https://wordpress.org/support/plugin/presshangar-site-checkup/reviews/#new-post';
+		$dismiss_url = wp_nonce_url( self::page_url() . '&phcheckup_review_off=1', 'phcheckup_review_off' );
+		?>
+		<div class="card" style="max-width:760px;border-left:4px solid #f6a72a;">
+			<p style="margin:.2em 0;">
+				<?php esc_html_e( 'Finding this plugin useful? A quick review really helps others discover it — thank you!', 'presshangar-site-checkup' ); ?>
+				<a href="<?php echo esc_url( $review_url ); ?>" target="_blank" rel="noopener"><strong><?php esc_html_e( 'Leave a review ★★★★★', 'presshangar-site-checkup' ); ?></strong></a>
+				&nbsp;·&nbsp;
+				<a href="<?php echo esc_url( $dismiss_url ); ?>" style="color:#787c82;text-decoration:none;"><?php esc_html_e( 'No thanks', 'presshangar-site-checkup' ); ?></a>
+			</p>
+		</div>
+		<?php
+	}
+
+	/**
 	 * Render the settings page.
 	 */
 	public static function render_page() {
 		if ( ! current_user_can( 'manage_options' ) ) {
 			return;
 		}
+
+		self::maybe_dismiss_review();
 
 		$settings  = phcheckup_get_settings();
 		$last_scan = phcheckup_get_last_scan();
@@ -503,6 +548,8 @@ class PHCHECKUP_Admin {
 			<?php else : ?>
 				<p><em><?php esc_html_e( 'No checkup has been run yet. Click the button above to get your first health report.', 'presshangar-site-checkup' ); ?></em></p>
 			<?php endif; ?>
+
+			<?php self::render_review_ask( $has_run ); ?>
 
 			<?php self::render_frontpage_card( $last_scan ); ?>
 

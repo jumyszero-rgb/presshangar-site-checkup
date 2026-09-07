@@ -3,7 +3,7 @@
  * Plugin Name:       PressHangar Site Checkup
  * Plugin URI:        https://presshangar.com/presshangar-site-checkup
  * Description:       A read-only site health checkup that explains what it finds in plain language. Detects overlapping plugins, gives approximate "heaviness" hints, and lists unused plugins/themes — all on demand, never automatically. PressHangar Site Checkup never changes anything on your site.
- * Version:           0.3.1
+ * Version:           0.3.2
  * Requires at least: 6.0
  * Requires PHP:      7.4
  * Author:            Musubiemu LLC
@@ -38,7 +38,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 }
 
 /** Plugin version. */
-define( 'PHCHECKUP_VERSION', '0.3.1' );
+define( 'PHCHECKUP_VERSION', '0.3.2' );
 
 
 /* Load translations: bundled /languages first, then WordPress.org language packs. */
